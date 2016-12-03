@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9188F02E1DF26074009B10AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9188F02D1DF26074009B10AC /* AppDelegate.swift */; };
+		9188F0301DF26074009B10AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9188F02F1DF26074009B10AC /* ViewController.swift */; };
+		9188F0331DF26074009B10AC /* TulubeTV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9188F0311DF26074009B10AC /* TulubeTV.xcdatamodeld */; };
+		9188F0361DF26074009B10AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9188F0341DF26074009B10AC /* Main.storyboard */; };
+		9188F0381DF26074009B10AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9188F0371DF26074009B10AC /* Assets.xcassets */; };
+		9188F0431DF26075009B10AC /* TulubeTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9188F0421DF26075009B10AC /* TulubeTVTests.swift */; };
+		9188F04E1DF26075009B10AC /* TulubeTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9188F04D1DF26075009B10AC /* TulubeTVUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9188F03F1DF26075009B10AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9188F0221DF26074009B10AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9188F0291DF26074009B10AC;
+			remoteInfo = TulubeTV;
+		};
+		9188F04A1DF26075009B10AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9188F0221DF26074009B10AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9188F0291DF26074009B10AC;
+			remoteInfo = TulubeTV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9188F02A1DF26074009B10AC /* TulubeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TulubeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9188F02D1DF26074009B10AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9188F02F1DF26074009B10AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9188F0321DF26074009B10AC /* TulubeTV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TulubeTV.xcdatamodel; sourceTree = "<group>"; };
+		9188F0351DF26074009B10AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9188F0371DF26074009B10AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9188F0391DF26074009B10AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9188F03E1DF26075009B10AC /* TulubeTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TulubeTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9188F0421DF26075009B10AC /* TulubeTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TulubeTVTests.swift; sourceTree = "<group>"; };
+		9188F0441DF26075009B10AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9188F0491DF26075009B10AC /* TulubeTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TulubeTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9188F04D1DF26075009B10AC /* TulubeTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TulubeTVUITests.swift; sourceTree = "<group>"; };
+		9188F04F1DF26075009B10AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9188F0271DF26074009B10AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9188F03B1DF26075009B10AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9188F0461DF26075009B10AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9188F0211DF26074009B10AC = {
+			isa = PBXGroup;
+			children = (
+				9188F02C1DF26074009B10AC /* TulubeTV */,
+				9188F0411DF26075009B10AC /* TulubeTVTests */,
+				9188F04C1DF26075009B10AC /* TulubeTVUITests */,
+				9188F02B1DF26074009B10AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9188F02B1DF26074009B10AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9188F02A1DF26074009B10AC /* TulubeTV.app */,
+				9188F03E1DF26075009B10AC /* TulubeTVTests.xctest */,
+				9188F0491DF26075009B10AC /* TulubeTVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9188F02C1DF26074009B10AC /* TulubeTV */ = {
+			isa = PBXGroup;
+			children = (
+				9188F02D1DF26074009B10AC /* AppDelegate.swift */,
+				9188F02F1DF26074009B10AC /* ViewController.swift */,
+				9188F0341DF26074009B10AC /* Main.storyboard */,
+				9188F0371DF26074009B10AC /* Assets.xcassets */,
+				9188F0391DF26074009B10AC /* Info.plist */,
+				9188F0311DF26074009B10AC /* TulubeTV.xcdatamodeld */,
+			);
+			path = TulubeTV;
+			sourceTree = "<group>";
+		};
+		9188F0411DF26075009B10AC /* TulubeTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				9188F0421DF26075009B10AC /* TulubeTVTests.swift */,
+				9188F0441DF26075009B10AC /* Info.plist */,
+			);
+			path = TulubeTVTests;
+			sourceTree = "<group>";
+		};
+		9188F04C1DF26075009B10AC /* TulubeTVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9188F04D1DF26075009B10AC /* TulubeTVUITests.swift */,
+				9188F04F1DF26075009B10AC /* Info.plist */,
+			);
+			path = TulubeTVUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9188F0291DF26074009B10AC /* TulubeTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9188F0521DF26075009B10AC /* Build configuration list for PBXNativeTarget "TulubeTV" */;
+			buildPhases = (
+				9188F0261DF26074009B10AC /* Sources */,
+				9188F0271DF26074009B10AC /* Frameworks */,
+				9188F0281DF26074009B10AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TulubeTV;
+			productName = TulubeTV;
+			productReference = 9188F02A1DF26074009B10AC /* TulubeTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9188F03D1DF26075009B10AC /* TulubeTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9188F0551DF26075009B10AC /* Build configuration list for PBXNativeTarget "TulubeTVTests" */;
+			buildPhases = (
+				9188F03A1DF26075009B10AC /* Sources */,
+				9188F03B1DF26075009B10AC /* Frameworks */,
+				9188F03C1DF26075009B10AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9188F0401DF26075009B10AC /* PBXTargetDependency */,
+			);
+			name = TulubeTVTests;
+			productName = TulubeTVTests;
+			productReference = 9188F03E1DF26075009B10AC /* TulubeTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9188F0481DF26075009B10AC /* TulubeTVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9188F0581DF26075009B10AC /* Build configuration list for PBXNativeTarget "TulubeTVUITests" */;
+			buildPhases = (
+				9188F0451DF26075009B10AC /* Sources */,
+				9188F0461DF26075009B10AC /* Frameworks */,
+				9188F0471DF26075009B10AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9188F04B1DF26075009B10AC /* PBXTargetDependency */,
+			);
+			name = TulubeTVUITests;
+			productName = TulubeTVUITests;
+			productReference = 9188F0491DF26075009B10AC /* TulubeTVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9188F0221DF26074009B10AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Gus Henry";
+				TargetAttributes = {
+					9188F0291DF26074009B10AC = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = T8QR256HW2;
+						ProvisioningStyle = Automatic;
+					};
+					9188F03D1DF26075009B10AC = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = T8QR256HW2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9188F0291DF26074009B10AC;
+					};
+					9188F0481DF26075009B10AC = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = T8QR256HW2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9188F0291DF26074009B10AC;
+					};
+				};
+			};
+			buildConfigurationList = 9188F0251DF26074009B10AC /* Build configuration list for PBXProject "TulubeTV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9188F0211DF26074009B10AC;
+			productRefGroup = 9188F02B1DF26074009B10AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9188F0291DF26074009B10AC /* TulubeTV */,
+				9188F03D1DF26075009B10AC /* TulubeTVTests */,
+				9188F0481DF26075009B10AC /* TulubeTVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9188F0281DF26074009B10AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9188F0381DF26074009B10AC /* Assets.xcassets in Resources */,
+				9188F0361DF26074009B10AC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9188F03C1DF26075009B10AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9188F0471DF26075009B10AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9188F0261DF26074009B10AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9188F0301DF26074009B10AC /* ViewController.swift in Sources */,
+				9188F02E1DF26074009B10AC /* AppDelegate.swift in Sources */,
+				9188F0331DF26074009B10AC /* TulubeTV.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9188F03A1DF26075009B10AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9188F0431DF26075009B10AC /* TulubeTVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9188F0451DF26075009B10AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9188F04E1DF26075009B10AC /* TulubeTVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9188F0401DF26075009B10AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9188F0291DF26074009B10AC /* TulubeTV */;
+			targetProxy = 9188F03F1DF26075009B10AC /* PBXContainerItemProxy */;
+		};
+		9188F04B1DF26075009B10AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9188F0291DF26074009B10AC /* TulubeTV */;
+			targetProxy = 9188F04A1DF26075009B10AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9188F0341DF26074009B10AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9188F0351DF26074009B10AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9188F0501DF26075009B10AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		9188F0511DF26075009B10AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9188F0531DF26075009B10AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = T8QR256HW2;
+				INFOPLIST_FILE = TulubeTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gushenry.TulubeTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9188F0541DF26075009B10AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = T8QR256HW2;
+				INFOPLIST_FILE = TulubeTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gushenry.TulubeTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		9188F0561DF26075009B10AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T8QR256HW2;
+				INFOPLIST_FILE = TulubeTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gushenry.TulubeTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TulubeTV.app/TulubeTV";
+			};
+			name = Debug;
+		};
+		9188F0571DF26075009B10AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T8QR256HW2;
+				INFOPLIST_FILE = TulubeTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gushenry.TulubeTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TulubeTV.app/TulubeTV";
+			};
+			name = Release;
+		};
+		9188F0591DF26075009B10AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = T8QR256HW2;
+				INFOPLIST_FILE = TulubeTVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gushenry.TulubeTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TulubeTV;
+			};
+			name = Debug;
+		};
+		9188F05A1DF26075009B10AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = T8QR256HW2;
+				INFOPLIST_FILE = TulubeTVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gushenry.TulubeTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TulubeTV;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9188F0251DF26074009B10AC /* Build configuration list for PBXProject "TulubeTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9188F0501DF26075009B10AC /* Debug */,
+				9188F0511DF26075009B10AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9188F0521DF26075009B10AC /* Build configuration list for PBXNativeTarget "TulubeTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9188F0531DF26075009B10AC /* Debug */,
+				9188F0541DF26075009B10AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9188F0551DF26075009B10AC /* Build configuration list for PBXNativeTarget "TulubeTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9188F0561DF26075009B10AC /* Debug */,
+				9188F0571DF26075009B10AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9188F0581DF26075009B10AC /* Build configuration list for PBXNativeTarget "TulubeTVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9188F0591DF26075009B10AC /* Debug */,
+				9188F05A1DF26075009B10AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9188F0311DF26074009B10AC /* TulubeTV.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9188F0321DF26074009B10AC /* TulubeTV.xcdatamodel */,
+			);
+			currentVersion = 9188F0321DF26074009B10AC /* TulubeTV.xcdatamodel */;
+			path = TulubeTV.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9188F0221DF26074009B10AC /* Project object */;
+}

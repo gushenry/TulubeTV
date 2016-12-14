@@ -30,7 +30,13 @@ class DrawManager {
      Represents that Canvas that the DrawManager is in communication with.
      */
     var canvas : Canvas?
-    
+  
+    /**
+      The image background where users and import images from their Gallery to
+      draw on.
+    */
+    var imageBackground : UIImageView?
+  
     /**
      Represents that DrawModel that the DrawManager is in communication with.
      */
@@ -90,7 +96,11 @@ class DrawManager {
         self.drawModel?.lineManager.addSegmentToLine(segment: segment)
         self.canvas?.drawLineFromSegment(segment: segment)
     }
-    
+  
+    func handleImportedImage(image: UIImage) {
+        self.imageBackground?.image = image
+    }
+  
     /**
      Processes a new Line.
      */
@@ -130,6 +140,7 @@ class DrawManager {
     func clearCanvas(emit: Bool) {
         self.canvas?.clear()
         self.drawModel?.clearLocalLines()
+        self.imageBackground?.image = nil
         if emit {
             SocketIOManager.sharedInstance.emitClearCanvas()
         }

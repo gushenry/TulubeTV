@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		916AAD371E01A807001BF6CB /* CanvasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916AAD361E01A807001BF6CB /* CanvasTests.swift */; };
 		9188F02E1DF26074009B10AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9188F02D1DF26074009B10AC /* AppDelegate.swift */; };
 		9188F0301DF26074009B10AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9188F02F1DF26074009B10AC /* ViewController.swift */; };
 		9188F0331DF26074009B10AC /* TulubeTV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9188F0311DF26074009B10AC /* TulubeTV.xcdatamodeld */; };
@@ -69,6 +70,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		916AAD361E01A807001BF6CB /* CanvasTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasTests.swift; sourceTree = "<group>"; };
 		9188F02A1DF26074009B10AC /* TulubeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TulubeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9188F02D1DF26074009B10AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9188F02F1DF26074009B10AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			children = (
 				9188F0421DF26075009B10AC /* TulubeTVTests.swift */,
 				9188F0441DF26075009B10AC /* Info.plist */,
+				916AAD361E01A807001BF6CB /* CanvasTests.swift */,
 			);
 			path = TulubeTVTests;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9188F0431DF26075009B10AC /* TulubeTVTests.swift in Sources */,
+				916AAD371E01A807001BF6CB /* CanvasTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

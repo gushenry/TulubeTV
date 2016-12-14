@@ -60,8 +60,17 @@ class SocketIOManager: NSObject {
             data in
             self.displayDeviceCode(data: data.0)
         }
+        socket.on("loadImage") {
+            _ in
+            print("loads!!")
+            self.loadImage()
+        }
     }
-    
+  
+    func loadImage() {
+        drawViewController?.loadPicture()
+    }
+  
     /**
      Establishes the connection to the server by calling server.connect().
      */

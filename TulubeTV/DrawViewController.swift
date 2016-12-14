@@ -24,42 +24,55 @@ class DrawViewController: UIViewController, UIScrollViewDelegate {
     var imageViewSize : CGSize = CGSize(width: 0, height: 0)
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        let canvas = Canvas()
-        let drawModel = DrawModel()
-        DrawManager.sharedInstance.canvas = canvas
-        DrawManager.sharedInstance.drawModel = drawModel
+      super.viewDidLoad()
       
-        SocketIOManager.sharedInstance.drawViewController = self
-        SocketIOManager.sharedInstance.establishConnection()
-        
-        canvas.frame.size = CGSize(width: 900, height: 600)
-        canvas.backgroundColor = UIColor.white
-        canvas.isUserInteractionEnabled = true
-        
-        //        scrollView = UIScrollView(frame: view.bounds)
-        scrollView.backgroundColor = UIColor.lightGray
-        scrollView.contentSize = canvas.bounds.size
-        
-        scrollView.addSubview(canvas)
-        //        view.addSubview(scrollView)
-        
-        scrollView.delegate = self
-        
-        // remove gesture delays on scroll view
-        if let gestures = scrollView.gestureRecognizers {
-            for gesture in gestures {
-                gesture.delaysTouchesBegan = false
-            }
+      SocketIOManager.sharedInstance.drawViewController = self
+      SocketIOManager.sharedInstance.establishConnection()
+      
+      // Do any additional setup after loading the view, typically from a nib.
+      
+      // create Canvas and DrawModel
+      
+      let canvas = Canvas()
+      let drawModel = DrawModel()
+      DrawManager.sharedInstance.canvas = canvas
+      DrawManager.sharedInstance.drawModel = drawModel
+      
+      // add properties to Cavnas and ScrollView
+      canvas.frame.size = CGSize(width: 900, height: 600)
+      canvas.backgroundColor = UIColor.clear
+      canvas.isUserInteractionEnabled = true
+      
+      scrollView.backgroundColor = UIColor.clear
+      scrollView.contentSize = canvas.bounds.size
+      
+      // create the background image
+      let imageBackground = UIImageView()
+      imageBackground.frame.size = canvas.frame.size
+      imageBackground.backgroundColor = UIColor.white
+      imageBackground.isUserInteractionEnabled = false
+      
+      DrawManager.sharedInstance.imageBackground = imageBackground
+      
+      // add views to scrollView
+      scrollView.addSubview(imageBackground)
+      scrollView.addSubview(canvas)
+      //        view.addSubview(scrollView)
+      
+      scrollView.delegate = self
+      
+      // remove gesture delays on scroll view
+      if let gestures = scrollView.gestureRecognizers {
+        for gesture in gestures {
+          gesture.delaysTouchesBegan = false
         }
-        
-        self.imageViewSize = canvas.bounds.size
-        
-        setZoomScale()
-        scrollViewDidZoom(scrollView)
-        
+      }
+      
+      self.imageViewSize = canvas.bounds.size
+      
+      setZoomScale()
+      scrollViewDidZoom(scrollView)
+      
     }
     
     override func didReceiveMemoryWarning() {
@@ -70,7 +83,14 @@ class DrawViewController: UIViewController, UIScrollViewDelegate {
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return DrawManager.sharedInstance.canvas
     }
-    
+  
+    func loadPicture() {
+      print("before load")
+      let image = UIImage(named: "blueprints")
+      DrawManager.sharedInstance.handleImportedImage(image: image!)
+      print("after load")
+    }
+  
     /**
      Sets the zoom scale (min and max) for zooming functionality.
      */
@@ -78,10 +98,6 @@ class DrawViewController: UIViewController, UIScrollViewDelegate {
         let scrollViewSize = scrollView.bounds.size
         let widthScale = scrollViewSize.width / self.imageViewSize.width
         let heightScale = scrollViewSize.height / self.imageViewSize.height
-        
-        //        scrollView.minimumZoomScale = 0.1
-        //        scrollView.maximumZoomScale = 6.0
-        //        scrollView.zoomScale = 1.0
         
         scrollView.minimumZoomScale = 1.0
         scrollView.maximumZoomScale = 1.0
